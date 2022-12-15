@@ -13,7 +13,7 @@ sudo systemctl enable docker
 sudo systemctl daemon-reload
 sudo systemctl restart docker
 yum remove kubeadm kubelet kubectl -y
-yum install kubeadm-1.23.1-0.x86_64 kubelet-1.23.1-0.x86_64 kubectl-1.23.1-0.x86_64 --disableexcludes=kubernetes -y
+yum install kubeadm-1.25.1-0.x86_64 kubelet-1.25.1-0.x86_64 kubectl-1.25.1-0.x86_64 --disableexcludes=kubernetes -y
 sudo kubeadm init
 mkdir -p $HOME/.kube
 sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
