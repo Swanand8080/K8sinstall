@@ -35,3 +35,4 @@ curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add
 echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
 #K8s package installation
 sudo apt-get install kubelet=1.23.15-00 kubeadm=1.23.15-00 kubectl=1.23.15-00 -y --allow-change-held-packages
+sudo apt-mark hold kubelet kubeadm kubectl
